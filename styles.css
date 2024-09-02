@@ -1,0 +1,240 @@
+/* Styles de base */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Noto+Sans+JP:wght@300;400&display=swap');
+
+body {
+  padding: 0 2%;
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  
+
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav .profile {
+  display: flex;
+  align-items: center;
+}
+
+nav .profile img {
+  width: 60px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+nav .profile h1 {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+  color: inherit;
+}
+
+nav ul li a:hover {
+  border-bottom-color: #000;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.page-content {
+  margin: 4%;
+}
+
+.page-content header {
+  margin-top: 5%;
+  max-width: 80%;
+}
+
+.page-content header h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 6vh;
+  
+}
+
+.page-content header h2 span {
+  margin: 0 10px; /* Espacement autour des tirets */
+}
+
+.page-content header p {
+  line-height: 30px;
+  color: #818181;
+}
+
+/* Styles pour un bouton moderne */
+.page-content header button {
+  background-color: #454546; /* Couleur de fond initiale */
+  color: #ffffff; /* Couleur du texte */
+  padding: 10px 30px; /* Espace intérieur pour un bouton plus large */
+  font-size: 16px; /* Taille de la police */
+  font-weight: bold; /* Texte en gras */
+  border: none; /* Supprimer les bordures par défaut */
+  border-radius: 25px; /* Coins arrondis */
+  cursor: pointer; /* Curseur pointer pour indiquer que c'est cliquable */
+  transition: all 0.3s ease; /* Transition pour un effet doux */
+  box-shadow: 0 8px 15px rgba(67, 69, 71, 0.2); /* Ombre portée subtile */
+}
+
+.page-content header button:hover {
+  background-color: #1d1e1f; /* Couleur de fond plus foncée au survol */
+  box-shadow: 0 15px 20px rgba(58, 59, 59, 0.3); /* Ombre portée plus grande au survol */
+  transform: translateY(-2px); /* Effet de soulèvement au survol */
+}
+
+.page-content header button:active {
+  background-color: #333536; /* Couleur de fond plus foncée au clic */
+  box-shadow: 0 5px 5px rgba(82, 86, 90, 0.2); /* Ombre portée réduite au clic */
+  transform: translateY(0); /* Remet le bouton à sa position d'origine */
+}
+
+
+.page-content .presentation-image {
+  margin-top: 5%;
+}
+
+.page-content .presentation-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-content .projects-section {
+  margin-top: 6%;
+}
+
+.page-content .projects-section h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+}
+
+.page-content .projects-section .projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Effets de hover pour les projets */
+.page-content .projects-section .projects .project {
+  margin-right: 40px;
+  max-width: 13vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Ajouter la transition pour l'effet de zoom et d'ombre */
+  border: 1px solid #ddd; /* Ajoute une bordure légère */
+  border-radius: 8px; /* Ajoute des coins arrondis */
+  padding: 15px; /* Espace intérieur pour respirer */
+  background-color: #f9f9f9; /* Couleur de fond douce */
+}
+
+.page-content .projects-section .projects .project:hover {
+  transform: scale(1.05); /* Zoom léger au survol */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
+  background-color: #fff; /* Changement de couleur de fond au survol */
+}
+
+.page-content .projects-section .projects .project .description {
+  font-size: 12px; 
+}
+
+.project h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project .dates {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(145, 145, 145);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
+
+  .page-content header {
+    margin-top: 10%;
+    max-width: 100%;
+  }
+
+  /* Ajuste la taille de la police pour les petits écrans */
+  .page-content header h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 4vh
+    
+  }
+
+  /* Supprimer les tirets pour les petits écrans */
+  .page-content header h2 span {
+    display: none;
+  }
+
+
+  .page-content .projects-section {
+    margin-top: 15%;
+  }
+
+  .page-content .projects-section h2 {
+    font-size: 1.5em;
+  }
+
+  .page-content .projects-section .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-content .projects-section .projects .project {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
