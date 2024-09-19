@@ -18,4 +18,9 @@ ajout d'un mode sombre/clair
 Projets présentés avec images, descriptions, et liens vers les dépôts GitHub correspondants.
 Barre de navigation avec ancrages vers les différentes sections du portfolio (CV, Projets, Contact LinkedIn).
 
+je vous laisse ici le code complet en espérant que cela puisse servir à d'autres gens !
+
+Hello World!
+jérôme
+
 
